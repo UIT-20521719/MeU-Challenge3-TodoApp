@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AddTask from '../components/AddTask';
 import TaskList from '../components/TaskList';
+import Footer from '../components/Footer';
 
 const TodoPage = () => {
   const [tab, setTab] = useState('all');
@@ -43,6 +44,7 @@ const TodoPage = () => {
       </div>
       <AddTask />
       <TaskList tab={tab} />
+      <Footer />
     </div>
   );
 };
