@@ -1,0 +1,40 @@
+.task {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  margin: 5px;
+
+  &__input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+
+    label {
+      margin: 0 10px;
+      font-weight: 600;
+
+      &.completed {
+        text-decoration: line-through;
+        color: #333;
+      }
+    }
+  }
+
+  button {
+    background-color: #fff;
+    color: #bdbdbd;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

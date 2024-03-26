@@ -1,0 +1,32 @@
+.input {
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+
+  input {
+    width: 100%;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.5rem;
+    padding: 15px 15px;
+
+    &:focus-visible {
+      border: 1px solid #2f80ed;
+      outline: none;
+    }
+  }
+
+  button {
+    background-color: #2f80ed;
+    padding: 15px 25px;
+    margin-left: 20px;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
